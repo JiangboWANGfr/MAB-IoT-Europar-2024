@@ -1,0 +1,56 @@
+rm -f core *~ */core */*~
+rm -f */*.o */*.mod */*.obj */*.exe */npbparams.h
+rm -f MPI_dummy/test MPI_dummy/libmpi.a
+rm -f sys/setparams sys/makesuite sys/setparams.h
+rm -f btio.*.out*
+make[1]: Entering directory '/home/pi/NPB3.4.2/NPB3.4-MPI/EP'
+rm -f *.o *~ *.mod
+rm -f npbparams.h core
+make[1]: Leaving directory '/home/pi/NPB3.4.2/NPB3.4-MPI/EP'
+make[1]: Entering directory '/home/pi/NPB3.4.2/NPB3.4-MPI/EP'
+make[2]: Entering directory '/home/pi/NPB3.4.2/NPB3.4-MPI/sys'
+gcc -g -DFORTRAN_REC_SIZE=0 -o setparams setparams.c
+make[2]: Leaving directory '/home/pi/NPB3.4.2/NPB3.4-MPI/sys'
+../sys/setparams ep S 
+/opt/openmpi/bin/mpif90 -c  -O3 ep_data.f90
+/opt/openmpi/bin/mpif90 -c  -O3 mylib.f90
+/opt/openmpi/bin/mpif90 -c  -O3 mpinpb.f90
+/opt/openmpi/bin/mpif90 -c  -O3 ep.f90
+/opt/openmpi/bin/mpif90 -c  -O3 verify.f90
+cd ../common; /opt/openmpi/bin/mpif90 -c  -O3 print_results.f90
+cd ../common; /opt/openmpi/bin/mpif90 -c  -O3 randi8.f90
+cd ../common; /opt/openmpi/bin/mpif90 -c  -O3 timers.f90
+/opt/openmpi/bin/mpif90 -O3 -o ../bin/ep.S.x ep.o ep_data.o mylib.o verify.o mpinpb.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
+make[1]: Leaving directory '/home/pi/NPB3.4.2/NPB3.4-MPI/EP'
+make[1]: Entering directory '/home/pi/NPB3.4.2/NPB3.4-MPI/EP'
+rm -f *.o *~ *.mod
+rm -f npbparams.h core
+make[1]: Leaving directory '/home/pi/NPB3.4.2/NPB3.4-MPI/EP'
+make[1]: Entering directory '/home/pi/NPB3.4.2/NPB3.4-MPI/EP'
+make[2]: Entering directory '/home/pi/NPB3.4.2/NPB3.4-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/pi/NPB3.4.2/NPB3.4-MPI/sys'
+../sys/setparams ep W 
+/opt/openmpi/bin/mpif90 -c  -O3 ep_data.f90
+/opt/openmpi/bin/mpif90 -c  -O3 mylib.f90
+/opt/openmpi/bin/mpif90 -c  -O3 mpinpb.f90
+/opt/openmpi/bin/mpif90 -c  -O3 ep.f90
+/opt/openmpi/bin/mpif90 -c  -O3 verify.f90
+/opt/openmpi/bin/mpif90 -O3 -o ../bin/ep.W.x ep.o ep_data.o mylib.o verify.o mpinpb.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
+make[1]: Leaving directory '/home/pi/NPB3.4.2/NPB3.4-MPI/EP'
+make[1]: Entering directory '/home/pi/NPB3.4.2/NPB3.4-MPI/EP'
+rm -f *.o *~ *.mod
+rm -f npbparams.h core
+make[1]: Leaving directory '/home/pi/NPB3.4.2/NPB3.4-MPI/EP'
+make[1]: Entering directory '/home/pi/NPB3.4.2/NPB3.4-MPI/EP'
+make[2]: Entering directory '/home/pi/NPB3.4.2/NPB3.4-MPI/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/pi/NPB3.4.2/NPB3.4-MPI/sys'
+../sys/setparams ep A 
+/opt/openmpi/bin/mpif90 -c  -O3 ep_data.f90
+/opt/openmpi/bin/mpif90 -c  -O3 mylib.f90
+/opt/openmpi/bin/mpif90 -c  -O3 mpinpb.f90
+/opt/openmpi/bin/mpif90 -c  -O3 ep.f90
+/opt/openmpi/bin/mpif90 -c  -O3 verify.f90
+/opt/openmpi/bin/mpif90 -O3 -o ../bin/ep.A.x ep.o ep_data.o mylib.o verify.o mpinpb.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
+make[1]: Leaving directory '/home/pi/NPB3.4.2/NPB3.4-MPI/EP'

@@ -1,0 +1,134 @@
+totalIoTclusterNodesNum: [2, 2]
+allocatedIoTNodenumEachTask: 4
+allocatedIoTNodenumForReserveTask: 1
+taskParameter: 4
+runCircles: 1
+steps: 4000
+maxThreads: 1
+logPath: /home/pi/jiangboCloud/MABIOT/log
+mpirunPath: /opt/openmpi/bin/mpirun
+modelPath: /home/pi/jiangboCloud/MABIOT/model
+powerConsumptionFactor: 1 
+executionTimeFactor: 1
+rewardPowerConsumptionShreshold: 5  # useless now
+rewardPowerConsumptionBeta: 6.7     # useless now
+rewardPowerConsumptionAlpha: 9.5    # useless now
+MABalgorithmName: EXP3 #[UCB1,UCB2,EXP3]
+
+Tasks:
+  - path: /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/lu.W.x
+    class: LU
+    size: W
+  - path: /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.S.x
+    class: EP
+    size: S
+  - path: /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.W.x
+    class: EP
+    size: W
+  # - typeid: 2
+  #   path: /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.A.x
+  #   class: EP
+  #   size: W
+  # - typeid: 3
+  #   path: /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.B.x
+  #   class: EP
+  #   size: B
+
+IoTclusterNodes:
+  - id: 0
+    name: jetson1
+    ip: 192.168.1.4
+    cpuCores: 6
+    idleAveWatt: 6
+    execAveWatt: 8
+  - id: 1
+    name: jetson2
+    ip: 192.168.1.5
+    cpuCores: 6
+    idleAveWatt: 6
+    execAveWatt: 8
+  - id: 2
+    name: pi3
+    ip: 192.168.1.11
+    cpuCores: 4
+    idleAveWatt: 2.8
+    execAveWatt: 5.1
+  - id: 3
+    name: pi4
+    ip: 192.168.1.13
+    cpuCores: 4
+    idleAveWatt: 2.8
+    execAveWatt: 5.2
+  - id: 4
+    name: pi3
+    ip: 192.168.1.14
+    cpuCores: 4
+    idleAveWatt: 2.8
+    execAveWatt: 5.3
+  - id: 5
+    name: pi4
+    ip: 192.168.1.15
+    cpuCores: 4
+    idleAveWatt: 2.8
+    execAveWatt: 5.5
+  - id: 6
+    name: beagleboard1
+    ip: 192.168.1.3
+    cpuCores: 1
+    idleAveWatt: 1
+    execAveWatt: 2
+  - id: 7
+    name: beagleboard2
+    ip: 192.168.1.6
+    cpuCores: 1
+    idleAveWatt: 1
+    execAveWatt: 2
+  - id: 8
+    name: beagleboard3
+    ip: 192.168.1.7
+    cpuCores: 1
+    idleAveWatt: 1
+    execAveWatt: 2
+  - id: 9
+    name: beagleboard4
+    ip: 192.168.1.8
+    cpuCores: 1
+    idleAveWatt: 1
+    execAveWatt: 2
+  - id: 10
+    name: beagleboard5
+    ip: 192.168.1.9
+    cpuCores: 1
+    idleAveWatt: 1
+    execAveWatt: 2
+# IoTclusterNodes:
+#   - id: 0
+#     name: beagleboard1
+#     ip: 192.168.1.3
+#     cpuCores: 1
+#     idleAveWatt: 3
+#   - id: 1
+#     name: jetson1
+#     ip: 192.168.1.4
+#     cpuCores: 6
+#     idleAveWatt: 15
+#   - id: 2
+#     name: jetson2
+#     ip: 192.168.1.5
+#     cpuCores: 6
+#     idleAveWatt: 15
+#   - id: 3
+#     name: beagleboard2
+#     ip: 192.168.1.6
+#     cpuCores: 1
+#     idleAveWatt: 3
+#   - id: 4
+#     name: pi1
+#     ip: 192.168.1.11
+#     cpuCores: 4
+#     idleAveWatt: 8
+#   - id: 5
+#     name: pi2
+#     ip: 192.168.1.13
+#     cpuCores: 4
+#     idleAveWatt: 8

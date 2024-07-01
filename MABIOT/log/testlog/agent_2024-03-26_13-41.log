@@ -1,0 +1,136 @@
+2024-03-26 13:41:51 - MabTest - INFO - Load the MAB model from /home/pi/jiangboCloud/MABIOT/model/
+2024-03-26 13:41:51 - MabTest - INFO - 
+------Task: /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.S.x-------------
+
+2024-03-26 13:41:51 - MabTest - DEBUG - Task scheduled with selectedDevices: {3: 0.5, 4: 0.5, 0: 0.0, 2: 0.0}
+2024-03-26 13:41:51 - MabTest - DEBUG - deviceIDforThisDeviceType: {0: [0, 1], 1: [2, 3, 4, 5], 2: [6, 7, 8, 9, 10]}
+2024-03-26 13:41:51 - MabTest - DEBUG - device ID for this task: {2: 0, 3: 0.5, 0: 0}
+2024-03-26 13:41:51 - MabTest - DEBUG - deviceIDforThisDeviceType: {0: [0, 1], 1: [4, 5], 2: [6, 7, 8, 9, 10]}
+2024-03-26 13:41:51 - MabTest - INFO - Task1 started,with selectedNodes: {2: 0, 3: 0.5, 0: 0}
+2024-03-26 13:41:51 - MabTest - INFO - 
+------Task: /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.W.x-------------
+
+2024-03-26 13:41:51 - MabTest - INFO - Task1 command: /opt/openmpi/bin/mpirun -host pi2:4 /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.S.x rpi4 0 rpi4 0.5 jetson 0 
+2024-03-26 13:41:51 - MabTest - DEBUG - Task scheduled with selectedDevices: {2: 0.5, 4: 0.5, 0: 0.0, 3: 0.0}
+2024-03-26 13:41:51 - MabTest - DEBUG - deviceIDforThisDeviceType: {0: [0, 1], 1: [4, 5], 2: [6, 7, 8, 9, 10]}
+2024-03-26 13:41:51 - MabTest - DEBUG - device ID for this task: {4: 0.5, 5: 0.5, 0: 0, 3: 0}
+2024-03-26 13:41:51 - MabTest - DEBUG - deviceIDforThisDeviceType: {0: [0, 1], 1: [], 2: [6, 7, 8, 9, 10]}
+2024-03-26 13:41:51 - MabTest - INFO - Task1 started,with selectedNodes: {4: 0.5, 5: 0.5, 0: 0, 3: 0}
+2024-03-26 13:41:51 - MabTest - INFO - 
+------Task: /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.A.x-------------
+
+2024-03-26 13:41:51 - MabTest - INFO - Task1 command: /opt/openmpi/bin/mpirun -host pi3:4,pi4:4 /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.W.x rpi4 0.5 rpi4 0.5 jetson 0 rpi4 0 
+2024-03-26 13:41:51 - MabTest - DEBUG - Task scheduled with selectedDevices: {0: 0.4, 1: 0.3, 2: 0.3, 3: 0.0}
+2024-03-26 13:41:51 - MabTest - DEBUG - deviceIDforThisDeviceType: {0: [0, 1], 1: [], 2: [6, 7, 8, 9, 10]}
+2024-03-26 13:41:51 - MabTest - WARNING - Task1 selected class:1 ,but no available devices
+2024-03-26 13:41:53 - MabTest - INFO - Task1 STDOUT:
+[DEBUG]: IOT1_name:  rpi4        IOTratio: 0.5    core number: 4
+         IOT2_name:  rpi4        IOTratio: 0.5    core number: 4
+         IOT3_name:  jetson      IOTratio: 0.0    core number: 6
+         IOT4_name:  rpi4        IOTratio: 0.0    core number: 4
+[DEBUG]:      Rank:  5          start_row:   319       num_rows:    64       time:  0.493
+[DEBUG]:      Rank:  1          start_row:    63       num_rows:    64       time:  0.493
+[DEBUG]:      Rank:  6          start_row:   383       num_rows:    64       time:  0.500
+[DEBUG]:      Rank:  2          start_row:   127       num_rows:    64       time:  0.500
+[DEBUG]:      Rank:  7          start_row:   447       num_rows:    64       time:  0.491
+[DEBUG]:      Rank:  3          start_row:   191       num_rows:    64       time:  0.492
+[DEBUG]:      Rank:  0          start_row:    -1       num_rows:    64       time:  0.518
+[DEBUG]:      Rank:  4          start_row:   255       num_rows:    64       time:  0.518
+
+
+EP Benchmark Results:
+Class     =     W
+N         =     2^ 9 =  512
+CPU Time  =     0.518
+Verified  =     SUCCESSFUL  
+
+2024-03-26 13:41:53 - MabTest - INFO - Task1 task completed, execution time  within python:: 2.34191632270813
+2024-03-26 13:41:53 - MabTest - INFO - Task1 task completed, execution time 0.518
+2024-03-26 13:41:53 - MabTest - DEBUG - device ID for this task: {0: 0.4, 1: 0.3, 4: 0.3, 3: 0}
+2024-03-26 13:41:53 - MabTest - DEBUG - deviceIDforThisDeviceType: {0: [], 1: [5], 2: [6, 7, 8, 9, 10]}
+2024-03-26 13:41:53 - MabTest - INFO - 
+------Task: /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.S.x-------------
+
+2024-03-26 13:41:53 - MabTest - INFO - Task1 started,with selectedNodes: {0: 0.4, 1: 0.3, 4: 0.3, 3: 0}
+2024-03-26 13:41:53 - MabTest - DEBUG - Task scheduled with selectedDevices: {2: 0.5, 4: 0.5, 0: 0.0, 3: 0.0}
+2024-03-26 13:41:53 - MabTest - INFO - Task1 command: /opt/openmpi/bin/mpirun -host jetson1:6,jetson2:6,pi3:4 /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.A.x jetson 0.4 jetson 0.3 rpi4 0.3 rpi4 0 
+2024-03-26 13:41:53 - MabTest - DEBUG - deviceIDforThisDeviceType: {0: [], 1: [5], 2: [6, 7, 8, 9, 10]}
+2024-03-26 13:41:53 - MabTest - WARNING - Task1 selected class:1 ,but no available devices
+2024-03-26 13:41:53 - MabTest - INFO - Task1 STDOUT:
+
+2024-03-26 13:41:53 - MabTest - INFO - Task1 task completed, execution time 2.838998556137085
+2024-03-26 13:41:53 - MabTest - ERROR - Task 1 failed with return code: 2
+2024-03-26 13:41:53 - MabTest - DEBUG - device ID for this task: {5: 0.5, 3: 0, 0: 0}
+2024-03-26 13:41:53 - MabTest - DEBUG - deviceIDforThisDeviceType: {0: [], 1: [], 2: [6, 7, 8, 9, 10]}
+2024-03-26 13:41:53 - MabTest - INFO - 
+------Task: /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.S.x-------------
+
+2024-03-26 13:41:53 - MabTest - INFO - Task1 started,with selectedNodes: {5: 0.5, 3: 0, 0: 0}
+2024-03-26 13:41:53 - MabTest - DEBUG - Task scheduled with selectedDevices: {2: 0.5, 3: 0.5, 0: 0.0, 1: 0.0}
+2024-03-26 13:41:53 - MabTest - INFO - Task1 command: /opt/openmpi/bin/mpirun -host pi4:4 /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.S.x rpi4 0.5 rpi4 0 jetson 0 
+2024-03-26 13:41:53 - MabTest - DEBUG - deviceIDforThisDeviceType: {0: [], 1: [], 2: [6, 7, 8, 9, 10]}
+2024-03-26 13:41:53 - MabTest - WARNING - Task1 selected class:1 ,but no available devices
+2024-03-26 13:41:56 - MabTest - INFO - Task1 STDOUT:
+[DEBUG]: IOT1_name:  jetson      IOTratio: 0.4    core number: 6
+         IOT2_name:  jetson      IOTratio: 0.3    core number: 6
+         IOT3_name:  rpi4        IOTratio: 0.3    core number: 4
+         IOT4_name:  rpi4        IOTratio: 0.0    core number: 4
+[DEBUG]:      Rank:  8          start_row:  2045       num_rows:   204       time:  2.307
+[DEBUG]:      Rank: 12          start_row:  2861       num_rows:   307       time:  2.308
+[DEBUG]:      Rank:  1          start_row:   272       num_rows:   273       time:  2.283
+[DEBUG]:      Rank:  6          start_row:  1637       num_rows:   204       time:  2.296
+[DEBUG]:      Rank: 13          start_row:  3168       num_rows:   307       time:  2.284
+[DEBUG]:      Rank:  2          start_row:   545       num_rows:   273       time:  2.291
+[DEBUG]:      Rank: 10          start_row:  2453       num_rows:   204       time:  2.297
+[DEBUG]:      Rank: 14          start_row:  3475       num_rows:   307       time:  2.296
+[DEBUG]:      Rank:  3          start_row:   818       num_rows:   273       time:  2.296
+[DEBUG]:      Rank: 11          start_row:  2657       num_rows:   204       time:  2.296
+[DEBUG]:      Rank: 15          start_row:  3782       num_rows:   313       time:  2.297
+[DEBUG]:      Rank:  4          start_row:  1091       num_rows:   273       time:  2.308
+[DEBUG]:      Rank:  9          start_row:  2249       num_rows:   204       time:  2.285
+[DEBUG]:      Rank:  5          start_row:  1364       num_rows:   273       time:  2.284
+[DEBUG]:      Rank:  7          start_row:  1841       num_rows:   204       time:  2.297
+[DEBUG]:      Rank:  0          start_row:    -1       num_rows:   273       time:  2.307
+
+
+EP Benchmark Results:
+Class     =     A
+N         =     2^12 = 4096
+CPU Time  =     2.308
+Verified  =     SUCCESSFUL  
+
+2024-03-26 13:41:56 - MabTest - INFO - Task1 task completed, execution time  within python:: 3.3280670642852783
+2024-03-26 13:41:56 - MabTest - INFO - Task1 task completed, execution time 2.308
+2024-03-26 13:41:56 - MabTest - WARNING - Task1 selected class:1 ,but no available devices
+2024-03-26 13:41:56 - MabTest - INFO - Task1 STDOUT:
+
+2024-03-26 13:41:56 - MabTest - INFO - Task1 task completed, execution time 2.997481107711792
+2024-03-26 13:41:56 - MabTest - ERROR - Task 1 failed with return code: 2
+2024-03-26 13:41:56 - MabTest - DEBUG - device ID for this task: {4: 0.5, 5: 0.5, 0: 0, 1: 0}
+2024-03-26 13:41:56 - MabTest - DEBUG - deviceIDforThisDeviceType: {0: [0, 1], 1: [], 2: [6, 7, 8, 9, 10]}
+2024-03-26 13:41:56 - MabTest - INFO - Task1 started,with selectedNodes: {4: 0.5, 5: 0.5, 0: 0, 1: 0}
+2024-03-26 13:41:56 - MabTest - INFO - Total time: 6.128976345062256
+2024-03-26 13:41:56 - MabTest - INFO - Task1 command: /opt/openmpi/bin/mpirun -host pi3:4,pi4:4 /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.S.x rpi4 0.5 rpi4 0.5 jetson 0 jetson 0 
+2024-03-26 13:41:57 - MabTest - INFO - Task1 STDOUT:
+[DEBUG]: IOT1_name:  rpi4        IOTratio: 0.5    core number: 4
+         IOT2_name:  rpi4        IOTratio: 0.5    core number: 4
+         IOT3_name:  jetson      IOTratio: 0.0    core number: 6
+         IOT4_name:  jetson      IOTratio: 0.0    core number: 6
+[DEBUG]:      Rank:  4          start_row:   127       num_rows:    32       time:  0.186
+[DEBUG]:      Rank:  6          start_row:   191       num_rows:    32       time:  0.180
+[DEBUG]:      Rank:  7          start_row:   223       num_rows:    32       time:  0.180
+[DEBUG]:      Rank:  2          start_row:    63       num_rows:    32       time:  0.180
+[DEBUG]:      Rank:  3          start_row:    95       num_rows:    32       time:  0.180
+[DEBUG]:      Rank:  0          start_row:    -1       num_rows:    32       time:  0.186
+[DEBUG]:      Rank:  5          start_row:   159       num_rows:    32       time:  0.192
+[DEBUG]:      Rank:  1          start_row:    31       num_rows:    32       time:  0.192
+
+
+EP Benchmark Results:
+Class     =     S
+N         =     2^ 8 =  256
+CPU Time  =     0.192
+Verified  =     SUCCESSFUL  
+
+2024-03-26 13:41:57 - MabTest - INFO - Task1 task completed, execution time  within python:: 1.012486219406128
+2024-03-26 13:41:57 - MabTest - INFO - Task1 task completed, execution time 0.192

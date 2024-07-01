@@ -1,0 +1,68 @@
+2024-03-26 15:37:32 - MabTest - INFO - Load the MAB model from /home/pi/jiangboCloud/MABIOT/model/
+2024-03-26 15:37:32 - MabTest - INFO - 
+------Task: /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.S.x-------------
+
+2024-03-26 15:37:32 - MabTest - DEBUG - Task scheduled with selectedDevices: {3: 0.5, 4: 0.5, 1: 0.0, 2: 0.0}
+2024-03-26 15:37:32 - MabTest - DEBUG - deviceIDforThisDeviceType: {0: [0, 1], 1: [2, 3, 4, 5], 2: [6, 7, 8, 9, 10]}
+2024-03-26 15:37:32 - MabTest - DEBUG - device ID for this task: {2: 0.5, 3: 0.5, 1: 0, 0: 0}
+2024-03-26 15:37:32 - MabTest - DEBUG - deviceIDforThisDeviceType: {0: [0, 1], 1: [4, 5], 2: [6, 7, 8, 9, 10]}
+2024-03-26 15:37:32 - MabTest - INFO - Task1 started,with selectedNodes: {2: 0.5, 3: 0.5, 1: 0, 0: 0}
+2024-03-26 15:37:32 - MabTest - INFO - Total time: 0.2647364139556885
+2024-03-26 15:37:32 - MabTest - INFO - Task1 command: /opt/openmpi/bin/mpirun -host pi1:4,pi2:4 /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.S.x rpi4 0.5 rpi4 0.5 jetson 0 jetson 0 
+2024-03-26 15:37:34 - MabTest - INFO - Task1 STDOUT:
+[DEBUG]: IOT1_name:  rpi4        IOTratio: 0.5    core number: 4
+         IOT2_name:  rpi4        IOTratio: 0.5    core number: 4
+         IOT3_name:  jetson      IOTratio: 0.0    core number: 6
+         IOT4_name:  jetson      IOTratio: 0.0    core number: 6
+[DEBUG]:      Rank:  1          start_row:    31       num_rows:    32       time:  0.185
+[DEBUG]:      Rank:  4          start_row:   127       num_rows:    32       time:  0.191
+[DEBUG]:      Rank:  2          start_row:    63       num_rows:    32       time:  0.185
+[DEBUG]:      Rank:  5          start_row:   159       num_rows:    32       time:  0.185
+[DEBUG]:      Rank:  3          start_row:    95       num_rows:    32       time:  0.185
+[DEBUG]:      Rank:  6          start_row:   191       num_rows:    32       time:  0.185
+[DEBUG]:      Rank:  0          start_row:    -1       num_rows:    32       time:  0.191
+[DEBUG]:      Rank:  7          start_row:   223       num_rows:    32       time:  0.185
+
+
+EP Benchmark Results:
+Class     =     S
+N         =     2^ 8 =  256
+CPU Time  =     0.191
+Verified  =     SUCCESSFUL  
+
+2024-03-26 15:37:34 - MabTest - INFO - Task1 task completed, execution time  within python:: 1.7581665515899658
+2024-03-26 15:37:34 - MabTest - INFO - Task1 task completed, execution time 0.191
+2024-03-26 15:37:48 - MabTest - INFO - Load the MAB model from /home/pi/jiangboCloud/MABIOT/model/
+2024-03-26 15:37:48 - MabTest - INFO - 
+------Task: /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.S.x-------------
+
+2024-03-26 15:37:48 - MabTest - DEBUG - Task scheduled with selectedDevices: {3: 0.5, 4: 0.5, 0: 0.0, 1: 0.0}
+2024-03-26 15:37:48 - MabTest - DEBUG - deviceIDforThisDeviceType: {0: [0, 1], 1: [2, 3, 4, 5], 2: [6, 7, 8, 9, 10]}
+2024-03-26 15:37:48 - MabTest - DEBUG - device ID for this task: {2: 0.5, 3: 0.5, 0: 0, 1: 0}
+2024-03-26 15:37:48 - MabTest - DEBUG - deviceIDforThisDeviceType: {0: [0, 1], 1: [4, 5], 2: [6, 7, 8, 9, 10]}
+2024-03-26 15:37:48 - MabTest - INFO - Task1 started,with selectedNodes: {2: 0.5, 3: 0.5, 0: 0, 1: 0}
+2024-03-26 15:37:48 - MabTest - INFO - Total time: 0.26772069931030273
+2024-03-26 15:37:48 - MabTest - INFO - Task1 command: /opt/openmpi/bin/mpirun -host pi1:4,pi2:4 /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.S.x rpi4 0.5 rpi4 0.5 jetson 0 jetson 0 
+2024-03-26 15:37:49 - MabTest - INFO - Task1 STDOUT:
+[DEBUG]: IOT1_name:  rpi4        IOTratio: 0.5    core number: 4
+         IOT2_name:  rpi4        IOTratio: 0.5    core number: 4
+         IOT3_name:  jetson      IOTratio: 0.0    core number: 6
+         IOT4_name:  jetson      IOTratio: 0.0    core number: 6
+[DEBUG]:      Rank:  1          start_row:    31       num_rows:    32       time:  0.163
+[DEBUG]:      Rank:  2          start_row:    63       num_rows:    32       time:  0.163
+[DEBUG]:      Rank:  3          start_row:    95       num_rows:    32       time:  0.162
+[DEBUG]:      Rank:  4          start_row:   127       num_rows:    32       time:  0.169
+[DEBUG]:      Rank:  0          start_row:    -1       num_rows:    32       time:  0.169
+[DEBUG]:      Rank:  5          start_row:   159       num_rows:    32       time:  0.163
+[DEBUG]:      Rank:  6          start_row:   191       num_rows:    32       time:  0.163
+
+
+EP Benchmark Results:
+Class     =     S
+N         =     2^ 8 =  256
+[DEBUG]:      Rank:  7          start_row:   223       num_rows:    32       time:  0.162
+CPU Time  =     0.169
+Verified  =     SUCCESSFUL  
+
+2024-03-26 15:37:49 - MabTest - INFO - Task1 task completed, execution time  within python:: 0.7973434925079346
+2024-03-26 15:37:49 - MabTest - INFO - Task1 task completed, execution time 0.169

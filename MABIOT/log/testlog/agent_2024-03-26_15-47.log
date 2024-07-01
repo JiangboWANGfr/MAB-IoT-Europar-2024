@@ -1,0 +1,68 @@
+2024-03-26 15:47:52 - MabTest - INFO - Load the MAB model from /home/pi/jiangboCloud/MABIOT/model/
+
+------Task: /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.S.x-------------
+2024-03-26 15:47:52 - MabTest - DEBUG - Device available: {0: [0, 1], 1: [2, 3, 4, 5], 2: [6, 7, 8, 9, 10]}
+2024-03-26 15:47:52 - MabTest - DEBUG - Task select Device: {2: 0.5, 3: 0.5, 0: 0, 1: 0}
+2024-03-26 15:47:52 - MabTest - DEBUG - Device available: {0: [0, 1], 1: [4, 5], 2: [6, 7, 8, 9, 10]}
+
+2024-03-26 15:47:52 - MabTest - INFO - Task1 command: /opt/openmpi/bin/mpirun -host pi1:4,pi2:4 
+                      /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.S.x rpi4 0.5 rpi4 0.5 jetson 0 jetson 0 
+                    
+------Task: /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.W.x-------------
+2024-03-26 15:47:52 - MabTest - DEBUG - Device available: {0: [0, 1], 1: [4, 5], 2: [6, 7, 8, 9, 10]}
+2024-03-26 15:47:52 - MabTest - DEBUG - Task select Device: {4: 1.0, 1: 0, 3: 0, 2: 0}
+2024-03-26 15:47:52 - MabTest - DEBUG - Device available: {0: [0, 1], 1: [5], 2: [6, 7, 8, 9, 10]}
+
+2024-03-26 15:47:52 - MabTest - INFO - Task2 command: /opt/openmpi/bin/mpirun -host pi3:4 
+                      /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.W.x rpi4 1.0 jetson 0 rpi4 0 rpi4 0 
+                      
+------Task: /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.A.x-------------
+2024-03-26 15:47:52 - MabTest - DEBUG - Device available: {0: [0, 1], 1: [5], 2: [6, 7, 8, 9, 10]}
+2024-03-26 15:47:52 - MabTest - DEBUG - Task select Device: {0: 0.4, 1: 0.6, 2: 0, 3: 0}
+2024-03-26 15:47:52 - MabTest - DEBUG - Device available: {0: [], 1: [5], 2: [6, 7, 8, 9, 10]}
+
+2024-03-26 15:47:53 - MabTest - INFO - Task3 command: /opt/openmpi/bin/mpirun -host jetson1:6,jetson2:6 
+                      /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.A.x jetson 0.4 jetson 0.6 rpi4 0 rpi4 0 
+
+------Task: /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.B.x-------------
+2024-03-26 15:47:52 - MabTest - DEBUG - Device available: {0: [], 1: [5], 2: [6, 7, 8, 9, 10]}
+2024-03-26 15:47:52 - MabTest - WARNING - ep.B.x selected Device class:JETSON ,but no available devices
+2024-03-26 15:47:53 - MabTest - INFO - Task1 task completed, execution time 0.564
+2024-03-26 15:47:53 - MabTest - WARNING - ep.B.x selected Device class:JETSON ,but no available devices
+
+2024-03-26 15:47:53 - MabTest - INFO - Task2 task completed, execution time 0.147
+2024-03-26 15:47:53 - MabTest - WARNING - ep.B.x selected Device class:JETSON ,but no available devices
+2024-03-26 15:47:54 - MabTest - INFO - Task3 task completed, execution time 0.246
+2024-03-26 15:47:54 - MabTest - DEBUG - Task select Device: {0: 0.4, 1: 0.6, 3: 0, 2: 0}
+2024-03-26 15:47:54 - MabTest - DEBUG - Device available: {0: [], 1: [5, 4, 2, 3], 2: [6, 7, 8, 9, 10]}
+
+------Task: /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.W.x-------------
+2024-03-26 15:47:54 - MabTest - INFO - Task1 command: /opt/openmpi/bin/mpirun -host jetson1:6,jetson2:6 
+                                       /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.S.x jetson 0.4 jetson 0.6 rpi4 0 rpi4 0 
+2024-03-26 15:47:54 - MabTest - DEBUG - Device available: {0: [], 1: [5, 4, 2, 3], 2: [6, 7, 8, 9, 10]}
+2024-03-26 15:47:54 - MabTest - DEBUG - Task select Device: {5: 0.5, 4: 0.5, 0: 0, 2: 0}
+2024-03-26 15:47:54 - MabTest - DEBUG - Device available: {0: [], 1: [2, 3], 2: [6, 7, 8, 9, 10]}
+
+------Task: /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.A.x-------------
+2024-03-26 15:47:54 - MabTest - INFO - Task1 command: /opt/openmpi/bin/mpirun -host pi4:4,pi3:4 
+                                       /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.W.x rpi4 0.5 rpi4 0.5 jetson 0 rpi4 0 
+2024-03-26 15:47:54 - MabTest - DEBUG - Device available: {0: [], 1: [2, 3], 2: [6, 7, 8, 9, 10]}
+2024-03-26 15:47:54 - MabTest - DEBUG - Task select Device: {2: 0.5, 3: 0.5, 0: 0, 1: 0}
+2024-03-26 15:47:54 - MabTest - DEBUG - Device available: {0: [], 1: [], 2: [6, 7, 8, 9, 10]}
+2024-03-26 15:47:54 - MabTest - INFO - 
+
+------Task: /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.S.x-------------
+2024-03-26 15:47:54 - MabTest - DEBUG - Device available: {0: [], 1: [], 2: [6, 7, 8, 9, 10]}
+2024-03-26 15:47:54 - MabTest - WARNING - ep.S.x selected Device class:RPI4 ,but no available devices
+2024-03-26 15:47:55 - MabTest - INFO - Task1 task completed, execution time 0.288
+2024-03-26 15:47:55 - MabTest - DEBUG - Task select Device: {5: 0.5, 4: 0.5, 1: 0, 0: 0}
+2024-03-26 15:47:55 - MabTest - INFO - Task1 command: /opt/openmpi/bin/mpirun -host pi1:4,pi2:4 
+                                       /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.A.x rpi4 0.5 rpi4 0.5 jetson 0 jetson 0 
+2024-03-26 15:47:55 - MabTest - DEBUG - Device available: {0: [], 1: [], 2: [6, 7, 8, 9, 10]}
+2024-03-26 15:47:55 - MabTest - INFO - Total time: 3.814549446105957
+2024-03-26 15:47:55 - MabTest - INFO - Task1 task completed, execution time 0.242
+2024-03-26 15:47:55 - MabTest - INFO - Task1 started,with selectedNodes: {5: 0.5, 4: 0.5, 1: 0, 0: 0}
+2024-03-26 15:47:55 - MabTest - INFO - Task1 command: /opt/openmpi/bin/mpirun -host pi4:4,pi3:4 
+                                      /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.S.x rpi4 0.5 rpi4 0.5 jetson 0 jetson 0 
+2024-03-26 15:47:56 - MabTest - INFO - Task1 task completed, execution time 0.158
+2024-03-26 15:47:58 - MabTest - INFO - Task1 task completed, execution time 2.301

@@ -1,0 +1,16 @@
+2024-03-26 15:17:06 - MabTest - INFO - Load the MAB model from /home/pi/jiangboCloud/MABIOT/model/
+2024-03-26 15:17:06 - MabTest - INFO - 
+------Task: /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.S.x-------------
+
+2024-03-26 15:17:06 - MabTest - DEBUG - Task scheduled with selectedDevices: {3: 0.5, 4: 0.5, 0: 0.0, 1: 0.0}
+2024-03-26 15:17:06 - MabTest - DEBUG - deviceIDforThisDeviceType: {0: [0, 1], 1: [2, 3, 4, 5], 2: [6, 7, 8, 9, 10]}
+2024-03-26 15:17:06 - MabTest - DEBUG - device ID for this task: {2: 0.5, 3: 0.5, 0: 0, 1: 0}
+2024-03-26 15:17:06 - MabTest - DEBUG - deviceIDforThisDeviceType: {0: [0, 1], 1: [4, 5], 2: [6, 7, 8, 9, 10]}
+2024-03-26 15:17:06 - MabTest - INFO - Task1 started,with selectedNodes: {2: 0.5, 3: 0.5, 0: 0, 1: 0}
+2024-03-26 15:17:06 - MabTest - INFO - Total time: 0.5490310192108154
+2024-03-26 15:17:06 - MabTest - INFO - Task1 command: /opt/openmpi/bin/mpirun -host pi1:4,pi2:4 /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.S.x rpi4 0.5 rpi4 0.5 jetson 0 jetson 0 
+2024-03-26 15:17:45 - MabTest - ERROR - Task1 has timed out and will be cancelled
+2024-03-26 15:17:45 - MabTest - INFO - Task1 STDOUT:
+Timeout
+2024-03-26 15:17:45 - MabTest - INFO - Task1 task completed, execution time 39.285155296325684
+2024-03-26 15:17:45 - MabTest - ERROR - Task 1 failed with return code: 1

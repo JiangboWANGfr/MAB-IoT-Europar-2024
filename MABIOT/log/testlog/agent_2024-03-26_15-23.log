@@ -1,0 +1,64 @@
+2024-03-26 15:23:14 - MabTest - INFO - Load the MAB model from /home/pi/jiangboCloud/MABIOT/model/
+2024-03-26 15:23:14 - MabTest - INFO - 
+------Task: /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.S.x-------------
+
+2024-03-26 15:23:14 - MabTest - DEBUG - Task scheduled with selectedDevices: {3: 0.5, 4: 0.5, 2: 0.0, 0: 0.0}
+2024-03-26 15:23:14 - MabTest - DEBUG - deviceIDforThisDeviceType: {0: [0, 1], 1: [2, 3, 4, 5], 2: [6, 7, 8, 9, 10]}
+2024-03-26 15:23:14 - MabTest - DEBUG - device ID for this task: {2: 0, 3: 0.5, 0: 0}
+2024-03-26 15:23:14 - MabTest - DEBUG - deviceIDforThisDeviceType: {0: [0, 1], 1: [4, 5], 2: [6, 7, 8, 9, 10]}
+2024-03-26 15:23:14 - MabTest - INFO - Task1 started,with selectedNodes: {2: 0, 3: 0.5, 0: 0}
+2024-03-26 15:23:14 - MabTest - INFO - Total time: 0.27272868156433105
+2024-03-26 15:23:14 - MabTest - INFO - Task1 command: /opt/openmpi/bin/mpirun -host pi2:4 /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.S.x rpi4 0 rpi4 0.5 jetson 0 
+2024-03-26 15:23:15 - MabTest - INFO - Task1 STDOUT:
+
+2024-03-26 15:23:15 - MabTest - INFO - Task1 task completed, execution time 0.9952366352081299
+2024-03-26 15:23:15 - MabTest - ERROR - Task 1 failed with return code: 2
+2024-03-26 15:23:49 - MabTest - INFO - Load the MAB model from /home/pi/jiangboCloud/MABIOT/model/
+2024-03-26 15:23:49 - MabTest - INFO - 
+------Task: /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.S.x-------------
+
+2024-03-26 15:23:49 - MabTest - DEBUG - Task scheduled with selectedDevices: {3: 0.5, 4: 0.5, 0: 0.0, 1: 0.0}
+2024-03-26 15:23:49 - MabTest - DEBUG - deviceIDforThisDeviceType: {0: [0, 1], 1: [2, 3, 4, 5], 2: [6, 7, 8, 9, 10]}
+2024-03-26 15:23:49 - MabTest - DEBUG - device ID for this task: {2: 0.5, 3: 0.5, 0: 0, 1: 0}
+2024-03-26 15:23:49 - MabTest - DEBUG - deviceIDforThisDeviceType: {0: [0, 1], 1: [4, 5], 2: [6, 7, 8, 9, 10]}
+2024-03-26 15:23:49 - MabTest - INFO - Task1 started,with selectedNodes: {2: 0.5, 3: 0.5, 0: 0, 1: 0}
+2024-03-26 15:23:49 - MabTest - INFO - Total time: 0.26199984550476074
+2024-03-26 15:23:49 - MabTest - INFO - Task1 command: /opt/openmpi/bin/mpirun -host pi1:4,pi2:4 /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.S.x rpi4 0.5 rpi4 0.5 jetson 0 jetson 0 
+2024-03-26 15:23:50 - MabTest - INFO - Task1 STDOUT:
+[DEBUG]: IOT1_name:  rpi4        IOTratio: 0.5    core number: 4
+         IOT2_name:  rpi4        IOTratio: 0.5    core number: 4
+         IOT3_name:  jetson      IOTratio: 0.0    core number: 6
+         IOT4_name:  jetson      IOTratio: 0.0    core number: 6
+[DEBUG]:      Rank:  1          start_row:    31       num_rows:    32       time:  0.202
+[DEBUG]:      Rank:  4          start_row:   127       num_rows:    32       time:  0.208
+[DEBUG]:      Rank:  2          start_row:    63       num_rows:    32       time:  0.202
+[DEBUG]:      Rank:  5          start_row:   159       num_rows:    32       time:  0.202
+[DEBUG]:      Rank:  3          start_row:    95       num_rows:    32       time:  0.202
+[DEBUG]:      Rank:  6          start_row:   191       num_rows:    32       time:  0.202
+[DEBUG]:      Rank:  0          start_row:    -1       num_rows:    32       time:  0.208
+[DEBUG]:      Rank:  7          start_row:   223       num_rows:    32       time:  0.202
+
+
+EP Benchmark Results:
+Class     =     S
+N         =     2^ 8 =  256
+CPU Time  =     0.208
+Verified  =     SUCCESSFUL  
+
+2024-03-26 15:23:50 - MabTest - INFO - Task1 task completed, execution time  within python:: 0.7617621421813965
+2024-03-26 15:23:50 - MabTest - INFO - Task1 task completed, execution time 0.208
+2024-03-26 15:23:59 - MabTest - INFO - Load the MAB model from /home/pi/jiangboCloud/MABIOT/model/
+2024-03-26 15:23:59 - MabTest - INFO - 
+------Task: /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.S.x-------------
+
+2024-03-26 15:23:59 - MabTest - DEBUG - Task scheduled with selectedDevices: {3: 0.5, 4: 0.5, 2: 0.0, 0: 0.0}
+2024-03-26 15:23:59 - MabTest - DEBUG - deviceIDforThisDeviceType: {0: [0, 1], 1: [2, 3, 4, 5], 2: [6, 7, 8, 9, 10]}
+2024-03-26 15:23:59 - MabTest - DEBUG - device ID for this task: {2: 0, 3: 0.5, 0: 0}
+2024-03-26 15:23:59 - MabTest - DEBUG - deviceIDforThisDeviceType: {0: [0, 1], 1: [4, 5], 2: [6, 7, 8, 9, 10]}
+2024-03-26 15:23:59 - MabTest - INFO - Task1 started,with selectedNodes: {2: 0, 3: 0.5, 0: 0}
+2024-03-26 15:23:59 - MabTest - INFO - Total time: 0.2660942077636719
+2024-03-26 15:23:59 - MabTest - INFO - Task1 command: /opt/openmpi/bin/mpirun -host pi2:4 /home/pi/jiangboNPB/NPB3.4.2/NPB3.4-MPI/bin/ep.S.x rpi4 0 rpi4 0.5 jetson 0 
+2024-03-26 15:24:00 - MabTest - INFO - Task1 STDOUT:
+
+2024-03-26 15:24:00 - MabTest - INFO - Task1 task completed, execution time 0.7612814903259277
+2024-03-26 15:24:00 - MabTest - ERROR - Task 1 failed with return code: 2
