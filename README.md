@@ -80,8 +80,8 @@ The EP (Embarrassingly Parallel) and LU benchmarks have been modified to accept 
 
 The repository is organized as follows:
 
-- `NPB3.4.2/`: Contains the source code for NPB benchmark modifications.
 - `/`: Scripts and configurations for running experiments.
+- `NPB3.4.2/`: Contains the source code for NPB benchmark modifications.
 - `MABIOT/`: Contains the source code for the MAB algorithms 
     - `Utils/`: The Utils folder contains utility scripts and functions that support the main operations of the project. These utilities include helper functions for data manipulation, file handling, logging, and other common tasks needed across the project.
     - `dataprocess/`: The dataprocess folder is dedicated to scripts and modules responsible for processing data which we get after traing.
