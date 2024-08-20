@@ -86,5 +86,5 @@ The repository is organized as follows:
     - `Utils/`: The Utils folder contains utility scripts and functions that support the main operations of the project. These utilities include helper functions for data manipulation, file handling, logging, and other common tasks needed across the project.
     - `dataprocess/`: The dataprocess folder is dedicated to scripts and modules responsible for processing data which we get after traing.
     - `log/`: The log folder stores log files generated during the execution of the project. These logs are useful for tracking the progress of experiments, debugging issues, and understanding the behavior of the algorithms over time.
-    -`model/`: Result model after training.
-    -`myagent/`: The myagent folder includes the agent scripts that utilize the MAB algorithms for decision-making. These agents interact with the IoT devices, make scheduling decisions, and allocate tasks based on the learned models to optimize performance and power consumption.
+    - `model/`: Result model after training.
+    - `myagent/`: The myagent folder includes the agent scripts that utilize the MAB algorithms for decision-making. These agents interact with the IoT devices, make scheduling decisions, and allocate tasks based on the learned models to optimize performance and power consumption.
